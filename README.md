@@ -1,0 +1,1 @@
+Making of a checkout section for a shopping app

@@ -1,0 +1,7 @@
+.counter{
+    display: flex;
+    flex-direction:row;
+}
+.counter > p{
+    margin: 1rem 2rem;
+}
