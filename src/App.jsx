@@ -7,15 +7,15 @@ function App() {
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
 
-  const order= {
+  const order = {
     first: count1,
     second: count2,
     third: count3,
   };
 
-  const sortedOrder={};
-  for(const key in order){
-    if(order[key]>0) sortedOrder[key]=order[key];
+  const sortedOrder = {};
+  for (const key in order) {
+    if (order[key] > 0) sortedOrder[key] = order[key];
   }
 
   return (
@@ -33,9 +33,11 @@ function App() {
           setCount3={setCount3}
         />
       </div>
-      <button className="order-now" onClick={()=>console.log(sortedOrder)}>
-        orderNow
-      </button>
+      <div className="buttonbox">
+        <button className="order-now" onClick={() => console.log(sortedOrder)}>
+          orderNow
+        </button>
+      </div>
     </>
   );
 }

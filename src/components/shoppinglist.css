@@ -2,6 +2,15 @@
     display: flex;
     flex-direction:row;
 }
-.counter > p{
-    margin: 1rem 2rem;
+.counter > button{
+    height: 3rem;
+    width: 3rem;
+    background-color:rgb(154, 243, 236);
+    border-radius: 50%;
+    border-color: crimson;
 }
+.counter > p{
+    margin: 0.6rem 1rem;
+    font-size: 1.2rem;
+}
+

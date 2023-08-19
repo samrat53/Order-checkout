@@ -1,16 +1,23 @@
-.cards{
-    display: flex;
-    flex-direction:row;
+.cards {
+  display: flex;
+  flex-direction: row;
 }
-.cards > *{
-    justify-content: space-evenly;
+.cards > * {
+  justify-content: space-evenly;
+}
+.order-now {
+  margin: 2rem 0px;
+  width: 15rem;
+  height: 3rem;
+  border-color: rgb(255, 0, 0);
+  border-radius: 30rem;
+  background-color: rgb(120, 255, 79);
+}
+.order-now:hover {
+  background-color: rgb(0, 247, 255);
+}
 
-}
-.order-now{
-    margin-left: 45%;
-    margin-top: 2rem;
-    width: 15rem;
-    height: 3rem;
-    border-color: cyan;
-    border-radius: 30rem;
+.buttonbox {
+  display: flex;
+  justify-content: center;
 }
