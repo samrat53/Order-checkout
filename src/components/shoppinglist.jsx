@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import foodImage from "../assets/food1.jpeg";
 import "./shoppinglist.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Shoppinglist = (props) => {
 
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
-  const {sortedOrder} =props;
+  let {sortedOrder} =props;
   const order = {
     First: count1,
     Second: count2,
@@ -19,6 +20,7 @@ const Shoppinglist = (props) => {
   for (const key in order) {
     if (order[key] > 0) sortedOrder[key] = order[key];
   }
+  const navigate = useNavigate();
 
   return (
     <>
@@ -105,10 +107,9 @@ const Shoppinglist = (props) => {
           <div className="buttonbox">
             <button
               className="order-now"
-              onClick={() => console.log(sortedOrder)}
-            >
-              orderNow
-            </button>
+              // onClick={() => console.log(sortedOrder)}
+              onClick={()=> navigate("/cart")}> Order Now!
+              </button>
           </div>
         </div>
       </div>
