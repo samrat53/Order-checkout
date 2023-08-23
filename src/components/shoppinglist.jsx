@@ -8,14 +8,14 @@ const Shoppinglist = (props) => {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
-
+  const {sortedOrder} =props;
   const order = {
     First: count1,
     Second: count2,
     Third: count3,
   };
 
-  const sortedOrder = {};
+  sortedOrder = {};
   for (const key in order) {
     if (order[key] > 0) sortedOrder[key] = order[key];
   }
