@@ -5,19 +5,4 @@
 .cards > * {
   justify-content: space-evenly;
 }
-.order-now {
-  margin: 2rem 0px;
-  width: 15rem;
-  height: 3rem;
-  border-color: rgb(255, 0, 0);
-  border-radius: 30rem;
-  background-color: rgb(120, 255, 79);
-}
-.order-now:hover {
-  background-color: rgb(0, 247, 255);
-}
 
-.buttonbox {
-  display: flex;
-  justify-content: center;
-}

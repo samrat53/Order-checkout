@@ -1,44 +1,17 @@
 import { useState } from "react";
 import "./App.css";
 import Shoppinglist from "./components/shoppinglist";
+import Cart from "./components/cart"
+import {Routes, Route} from 'react-router-dom'
 
 function App() {
-  const [count1, setCount1] = useState(0);
-  const [count2, setCount2] = useState(0);
-  const [count3, setCount3] = useState(0);
-
-  const order = {
-    first: count1,
-    second: count2,
-    third: count3,
-  };
-
-  const sortedOrder = {};
-  for (const key in order) {
-    if (order[key] > 0) sortedOrder[key] = order[key];
-  }
 
   return (
-    <>
-      <div className="cards">
-        <Shoppinglist
-          children1="first"
-          children2="second"
-          children3="third"
-          count1={count1}
-          setCount1={setCount1}
-          count2={count2}
-          setCount2={setCount2}
-          count3={count3}
-          setCount3={setCount3}
-        />
-      </div>
-      <div className="buttonbox">
-        <button className="order-now" onClick={() => console.log(sortedOrder)}>
-          orderNow
-        </button>
-      </div>
-    </>
+      <Routes>
+        <Route path='/' element={<Shoppinglist/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+      </Routes>   
+    
   );
 }
 
