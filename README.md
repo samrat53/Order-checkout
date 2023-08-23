@@ -1,1 +1,1 @@
-Making of a checkout section for a shopping app
+Made a cart section for a shopping app, that redirects the user with the order data to cart, displaying the order summary and total payable amount. This has in depth application of react router dom and hooks like useState, useEffect ,useLocation and useNavigate.
